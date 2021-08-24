@@ -16,10 +16,6 @@
         font-size: 24px;
     }
 
-    /* .bodyRightIcon{
-        margin-right: 25px;
-    } */
-
     .bodyRightHeader{
         font-size: 22px;
         margin-left: 10px;
@@ -27,7 +23,7 @@
     }
 
     .bodyRightText{
-        font-size: 16px;
+        font-size: 15px;
         margin-left: 10px;
         margin-right: 20px;
 
@@ -55,7 +51,7 @@
 @media (max-width: 1200px){
 
     .header{
-        height:7vw
+        height:5vw;
     }
 
     .headerLeft{
@@ -65,24 +61,167 @@
     .headerRight{
         width:65%;
     }
+
+    .bodyRightText{
+        font-size: 14px;
+    }
+
+
 }
 
 @media (max-width: 992px){
+
+    .App{
+        min-height:100vh;
+    }
+
+    .headerIcon{
+        height: 50px;
+    }
+
+    .headerText{
+        font-size: 24px;
+    }
+
+    .headerMenuItem{
+        font-size: 16px;
+    }
 
     .body{
         width:85%;
     }
 
+    .bigIcon{
+        height:150px;
+        width:115px;
+    }
+
+
     .bodyRight{
         width:50%;
     }
+
+    .bodyRightIcon{
+        width:60px;
+    }
+
+    .footerIcon{
+        width:35px;
+        height:45px;
+    }
+   
 
 }
 
 @media (max-width: 768px){
 
+    .header{
+        margin-top: 2vw;
+        width:85vw;
+    }
+
+    .headerRight{
+        max-width: 55vw;
+    }
+
+    .headerMenuItem{
+        font-size: 14px;
+    }
+
+    .problem{
+        font-size: 30px;
+    }
+
+    .actionButton{
+        font-size: 20px;
+    }
+
+    .footer{
+        height:fit-content
+    }
+
+    .footerIcon{
+        width: 30px;
+        height:40px;
+    }
+
+    .footerLeftText{
+        font-size: 18px;
+    }
+
+    .footerRight{
+        width:65%;
+        padding-right: 5vw;
+    }
+
+    .footerMenuItem{
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 576px){
+
+    .App{
+        min-height: fit-content;
+        align-content: center;
+    }
+
+    .header{
+        margin-top: 2.5vh;
+    }
+
+    .headerRight{
+        justify-content: space-between;
+        margin-left: 5vw;
+    }
+
+    .headerMenuItem{
+        align-self: center;
+    }
+
+    .body{
+        display:none;
+    }
+
+    .bodyMobile{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3.5vh;
+        margin-bottom: 2.5vh;
+    }
+
+    .bodyLeftMobile{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .bodyRightMobile{
+        margin-top: 3vh;
+        padding-left: 10vw;
+    }
+
+    .bodyRightHeader{
+        justify-self: center;
+    }
+
+    .footer{
+        height:fit-content
+    }
+
+    .footerLeft{
+        padding-left: 5vw;
+    }
+
+    .footerRight{
+        padding-right: 2.5vw;
+        width:65%;
+    }
+
+
+    .footerMenuItem{
+        align-self: center;
+        font-size: 10px;
+    }
 
 }
