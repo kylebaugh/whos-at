@@ -59,16 +59,27 @@ html,body{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  text-decoration: none;
 }
 
 .headerMenuItem{
   font-size: 18px;
+  text-decoration: none;
+  color:black;
 }
 
 .headerMenuItem:hover{
   text-decoration: underline;
   color: rgb(27, 219, 253);
   cursor: pointer;
+}
+
+.headerRightMobile{
+  display:none;
+}
+
+.mobileMenu{
+  display:none;
 }
 
 .divider{
@@ -98,6 +109,7 @@ html,body{
   flex-direction: column;
   /* background-color: salmon; */
   justify-content: center;
+  align-items: center;
   text-align: left;
 }
 
@@ -115,6 +127,7 @@ html,body{
 .problemText{
   font-size: 18px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .actionButton{
@@ -125,6 +138,32 @@ html,body{
   font-size: 25px;
   font-weight: bold;
   background-color: rgb(27, 198, 229);
+}
+
+.appIcons{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: -12.5%;
+}
+
+.googleIcon{
+  width:250px;
+  height:80px;
+}
+
+.googleIcon:hover{
+  cursor: pointer;
+}
+
+.appleIcon{
+  width:250px;
+  height:275px;
+}
+
+.appleIcon:hover{
+  cursor: pointer;
 }
 
 .actionButton:hover{
@@ -229,6 +268,11 @@ html,body{
 
 .footerMenuItem{
   font-size: 18px;
+  color:black
+}
+
+.copyright{
+  font-size: 18px;
 }
 
 .footerMenuItem:hover{
@@ -236,3 +280,27 @@ html,body{
   cursor:pointer;
 }
 
+
+
+/* TERMS AND CONDITIONS */
+
+.tAndC{
+  width:80%;
+  display:'flex';
+  text-align: left;
+}
+
+.tAndCHeader{
+  text-align: center;
+}
+
+.privacyPolicy{
+  width:80%;
+  display:flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.privacyHeader{
+  text-align: center;
+}
