@@ -24,8 +24,12 @@ const Home = (props) => {
     <div className='body'>
         <div className='bodyLeft'>
           <img className='bigIcon' src={`${bigIcon}`} alt='bigIcon'/>
-          <p className='problem'>Problem</p>
-          <p className='problemText'>Fugiat quis amet eiusmod consectetur ut irure adipisicing officia. Eu occaecat elit ut reprehenderit irure. Cillum aute dolore velit laboris voluptate ullamco mollit nulla culpa eu. Proident culpa amet sint culpa ea fugiat officia eiusmod. Eiusmod nulla consequat ex officia consequat. Ipsum incididunt id est fugiat velit occaecat elit laborum mollit.</p>
+          <p className='problem'>Personalize your <br></br>experience</p>
+          <p className='problemText'>
+            Have you ever had a great experience and want the same Server or Bartender during your next visit? You’re not alone. 
+            However, following your favorites can be problematic between exchanging phone numbers, social media, 
+            and the traditional call the store to ask. Who’s At is the answer.
+          </p>
           <div className='appIcons'>
             <img 
               className='googleIcon' 
@@ -86,9 +90,28 @@ const Home = (props) => {
       <div className='bodyMobile'>
         <div className='bodyLeftMobile'>
           <img className='bigIcon' src={`${bigIcon}`} alt='bigIcon'/>
-          <p className='problem'>Problem</p>
-          <p className='problemText'>Fugiat quis amet eiusmod consectetur ut irure adipisicing officia. Eu occaecat elit ut reprehenderit irure. Cillum aute dolore velit laboris voluptate ullamco mollit nulla culpa eu. Proident culpa amet sint culpa ea fugiat officia eiusmod. Eiusmod nulla consequat ex officia consequat. Ipsum incididunt id est fugiat velit occaecat elit laborum mollit.</p>
-          <button className='actionButton'>Call to Action</button>
+          <p className='problem'>Personalize your experience</p>
+          <p className='problemText'>
+          Have you ever had a great experience and want the same Server or Bartender during your next visit? You’re not alone. 
+            However, following your favorites can be problematic between exchanging phone numbers, social media, 
+            and the traditional call the store to ask. Who’s At is the answer.
+          </p>
+          
+          <div className='appIcons'>
+            <img 
+              className='googleIcon' 
+              src={`${GooglePlay}`} 
+              alt='googlePlay.png'
+              onClick={() => openGoogle('https://play.google.com/store')}
+              />
+            <img 
+              className='appleIcon' 
+              src={`${AppStore}`} 
+              alt='appStore.png'
+              onClick={() => openAppStore('https://www.apple.com/app-store/')}
+              />
+          </div>
+          
         </div>
 
         <div className='bodyRightMobile'>

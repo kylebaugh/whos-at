@@ -46,6 +46,12 @@
         margin-top: 25px;
     }
 
+    .copyright{
+        font-size: 14px;
+        margin-top: 25px;
+    }
+    
+
 }
 
 @media (max-width: 1200px){
@@ -61,6 +67,11 @@
     .headerRight{
         width:65%;
     }
+
+    .problem{
+        align-self: center;
+    }
+
 
     .bodyRightText{
         font-size: 14px;
@@ -96,6 +107,16 @@
         width:115px;
     }
 
+    .googleIcon{
+        width:200px;
+        height:70px
+    }
+
+    .appleIcon{
+        width:200px;
+        height:240px
+    }
+
 
     .bodyRight{
         width:50%;
@@ -128,13 +149,36 @@
         font-size: 14px;
     }
 
+    .body{
+        width:95vw;
+        padding-left: 5%;
+    }
+
+    .bodyLeft{
+        width:45%;
+        /* background-color: salmon; */
+    }
+
+    .bodyRight{
+        padding-left: 8%;
+        /* background-color: lime; */
+    }
+
     .problem{
         font-size: 30px;
     }
 
-    .actionButton{
-        font-size: 20px;
+
+    .googleIcon{
+        width:190px;
+        height:60px
     }
+
+    .appleIcon{
+        width:190px;
+        height:210px
+    }
+
 
     .footer{
         height:fit-content
@@ -157,17 +201,25 @@
     .footerMenuItem{
         font-size: 12px;
     }
+
+    .copyright{
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 576px){
 
     .App{
-        min-height: fit-content;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
         align-content: center;
     }
 
     .header{
         margin-top: 2.5vh;
+        margin-bottom: 2vh;
+        padding-top: 1vh;
     }
 
     .headerRight{
@@ -210,12 +262,20 @@
         /* background-color: lightgreen; */
     }
 
-    .body{
+    .divider{
+        display:none;
+    }
+
+    .bodyLeft{
+        display:none;
+    }
+    .bodyRight{
         display:none;
     }
 
     .bodyMobile{
         display:flex;
+        height:fit-content;
         flex-direction: column;
         align-items: center;
         margin-top: 3.5vh;
@@ -227,8 +287,18 @@
         padding-right: 10vw;
     }
 
+    .googleIcon{
+        width:175px;
+        height:60px
+    }
+
+    .appleIcon{
+        width:175px;
+        height:210px
+    }
+
     .bodyRightMobile{
-        margin-top: 3vh;
+        margin-top: -3vh;
         padding-left: 10vw;
     }
 
@@ -237,7 +307,8 @@
     }
 
     .footer{
-        height:fit-content
+        height:fit-content;
+        margin-top: 475px;
     }
 
     .footerLeft{
@@ -253,6 +324,11 @@
     .footerMenuItem{
         align-self: center;
         font-size: 10px;
+    }
+
+    .copyright{
+        font-size: 10px;
+        align-self: center;
     }
 
 }

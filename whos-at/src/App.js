@@ -6,15 +6,27 @@ import footerIcon from './assets/footerIcon.png'
 
 import {Link} from 'react-router-dom'
 import {useState} from 'react'
+// import {BrowserView, MobileView, isBrowser, isMobile} from 'react-device-detect'
 
 function App() {
 
   const [showMenu, setShowMenu] = useState(false)
+  // const [isAndroid, setIsAndroid] = useState(false)
+  // const [isIOS, setIsIOS] = useState(false)
 
   const mobileMenu = () => {
     setShowMenu(!showMenu)
   }
 
+  const appRedirect = () => {
+    if(navigator.userAgent.match(/Android/i)){
+      window.open('https://play.google.com/store', '_blank').focus()
+    }else if(navigator.userAgent.match(/iPhone/i)){
+      window.open('https://www.apple.com/app-store', '_blank').focus()
+    }else{
+      alert('Open site on your mobile device to redirect to your app store')
+    }
+  }
 
   // const openGoogle = () => {
   //   window.location.href = 'https://play.google.com/store'
@@ -41,16 +53,19 @@ function App() {
         <div className='headerRight'>
           
         <Link to='/' style={{textDecoration:'none'}}>
-          <div className='headerMenuItem'>
+          <div 
+            className='headerMenuItem'
+            onClick={() => appRedirect()}
+            >
             Get the App
           </div>
         </Link>
           
-          <Link to='/contact' style={{textDecoration:'none'}}>
+          {/* <Link to='/contact' style={{textDecoration:'none'}}>
           <div className='headerMenuItem'>
             Contact
           </div>
-          </Link>
+          </Link> */}
           
           <Link to='termsAndConditions' style={{textDecoration:'none'}}>
             <div className='headerMenuItem'>
@@ -82,11 +97,11 @@ function App() {
           </div>
         </Link>
 
-        <Link to='/contact' style={{textDecoration:'none'}}>
+        {/* <Link to='/contact' style={{textDecoration:'none'}}>
           <div className='headerMenuItem'>
             Contact
           </div>
-        </Link>
+        </Link> */}
 
         <Link to='termsAndConditions' style={{textDecoration:'none'}}>
           <div className='headerMenuItem'>
@@ -228,16 +243,19 @@ function App() {
         <div className='footerRight'>
           
         <Link to='/' style={{textDecoration:'none'}}>
-          <div className='footerMenuItem'>
+          <div 
+          className='footerMenuItem'
+          onClick={() => appRedirect()}
+          >
             Get the App
           </div>
         </Link>
 
-        <Link to='/contact' style={{textDecoration:'none'}}>
+        {/* <Link to='/contact' style={{textDecoration:'none'}}>
           <div className='footerMenuItem'>
             Contact
           </div>
-        </Link>
+        </Link> */}
 
         <Link to='termsAndConditions' style={{textDecoration:'none'}}>
           <div className='footerMenuItem'>
@@ -257,6 +275,7 @@ function App() {
 
         </div>
       </div>
+
     </div>
   );
 }
