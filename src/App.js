@@ -1,48 +1,145 @@
 import './App.css';
 import './responsive.css'
+import routes from './routes'
 import headerIcon from './assets/headerIcon.png'
-import bigIcon from './assets/bigIcon.png'
-import clock from './assets/clock.png'
-import graph from './assets/graph.png'
-import shield from './assets/shield.png'
 import footerIcon from './assets/footerIcon.png'
 
+import {Link} from 'react-router-dom'
+import {useState} from 'react'
+// import {BrowserView, MobileView, isBrowser, isMobile} from 'react-device-detect'
 
 function App() {
+
+  const [showMenu, setShowMenu] = useState(false)
+  // const [isAndroid, setIsAndroid] = useState(false)
+  // const [isIOS, setIsIOS] = useState(false)
+
+  const mobileMenu = () => {
+    setShowMenu(!showMenu)
+  }
+
+  const appRedirect = () => {
+    if(navigator.userAgent.match(/Android/i)){
+      window.open('https://play.google.com/store', '_blank').focus()
+    }else if(navigator.userAgent.match(/iPhone/i)){
+      window.open('https://www.apple.com/app-store', '_blank').focus()
+    }else{
+      alert('Open site on your mobile device to redirect to your app store')
+    }
+  }
+
+  // const openGoogle = () => {
+  //   window.location.href = 'https://play.google.com/store'
+  // }
+
+  // const openAppStore = () => {
+  //   window.location.href = 'https://www.apple.com/app-store/'
+  // }
+
   return (
+    
     <div className="App">
+
+
       <div className='header'>
 
         <div className='headerLeft'>
-          <img className='headerIcon' src={`${headerIcon}`} alt='icon'/>
+          <Link to='/' style={{textDecoration:'none'}}>
+            <img className='headerIcon' src={`${headerIcon}`} alt='icon'/>
+          </Link>
           <p className='headerText'>Who's At</p>
         </div>
 
         <div className='headerRight'>
-          <div className='headerMenuItem'>
+          
+        <Link to='/' style={{textDecoration:'none'}}>
+          <div 
+            className='headerMenuItem'
+            onClick={() => appRedirect()}
+            >
             Get the App
           </div>
+        </Link>
+          
+          {/* <Link to='/contact' style={{textDecoration:'none'}}>
           <div className='headerMenuItem'>
             Contact
           </div>
+          </Link> */}
+          
+          <Link to='termsAndConditions' style={{textDecoration:'none'}}>
+            <div className='headerMenuItem'>
+              Terms &amp; Conditions
+            </div>
+          </Link>
+          
+          <Link to='PrivacyPolicy' style={{textDecoration:'none'}}>
+            <div className='headerMenuItem'>
+              Privacy Policy
+            </div>
+          </Link>
+          
+        </div>
+     
+        <div className='mobileMenu' onClick={() => mobileMenu()}>
+            <div className='menuBox'></div>
+            <div className='menuBox'></div>
+            <div className='menuBox'></div>
+        </div>
+
+      </div>
+
+      {!showMenu && <div className='headerRightMobile'>
+          
+        <Link to='/' style={{textDecoration:'none'}}>
+          <div className='headerMenuItem'>
+            Get the App
+          </div>
+        </Link>
+
+        {/* <Link to='/contact' style={{textDecoration:'none'}}>
+          <div className='headerMenuItem'>
+            Contact
+          </div>
+        </Link> */}
+
+        <Link to='termsAndConditions' style={{textDecoration:'none'}}>
           <div className='headerMenuItem'>
             Terms &amp; Conditions
           </div>
+        </Link>
+
+        <Link to='PrivacyPolicy' style={{textDecoration:'none'}}>
           <div className='headerMenuItem'>
             Privacy Policy
           </div>
-        </div>
-     
-      </div>
+        </Link>
 
+        </div>}
+        
       <div className='divider'></div>
 
-      <div className='body'>
+        {routes}
+
+      {/* <div className='body'>
         <div className='bodyLeft'>
           <img className='bigIcon' src={`${bigIcon}`} alt='bigIcon'/>
           <p className='problem'>Problem</p>
           <p className='problemText'>Fugiat quis amet eiusmod consectetur ut irure adipisicing officia. Eu occaecat elit ut reprehenderit irure. Cillum aute dolore velit laboris voluptate ullamco mollit nulla culpa eu. Proident culpa amet sint culpa ea fugiat officia eiusmod. Eiusmod nulla consequat ex officia consequat. Ipsum incididunt id est fugiat velit occaecat elit laborum mollit.</p>
-          <button className='actionButton'>Call to Action</button>
+          <div className='appIcons'>
+            <img 
+              className='googleIcon' 
+              src={`${GooglePlay}`} 
+              alt='googlePlay.png'
+              onClick={() => openGoogle()}
+              />
+            <img 
+              className='appleIcon' 
+              src={`${AppStore}`} 
+              alt='appStore.png'
+              onClick={() => openAppStore()}
+              />
+          </div>
         </div>
 
         <div className='bodyRight'>
@@ -133,34 +230,52 @@ function App() {
           </div>
 
         </div>
-      </div>
+      </div> */}
 
       <div className='footer'>
         <div className='footerLeft'>
+        <Link to='/' style={{textDecoration:'none'}}>
           <img className='footerIcon' src={`${footerIcon}`} alt='icon'/>
+        </Link>
           <p className='footerLeftText'>Who's At</p>
         </div>
 
         <div className='footerRight'>
           
-          <div className='footerMenuItem'>
+        <Link to='/' style={{textDecoration:'none'}}>
+          <div 
+          className='footerMenuItem'
+          onClick={() => appRedirect()}
+          >
             Get the App
           </div>
+        </Link>
+
+        {/* <Link to='/contact' style={{textDecoration:'none'}}>
           <div className='footerMenuItem'>
             Contact
           </div>
+        </Link> */}
+
+        <Link to='termsAndConditions' style={{textDecoration:'none'}}>
           <div className='footerMenuItem'>
             Terms &amp; Conditions
           </div>
+          </Link>
+
+        <Link to='PrivacyPolicy' style={{textDecoration:'none'}}>
           <div className='footerMenuItem'>
             Privacy Policy
           </div>
-          <div className='footerMenuItem'>
+        </Link>
+
+          <div className='copyright'>
             &#169; Copyright 2021
           </div>
 
         </div>
       </div>
+
     </div>
   );
 }
