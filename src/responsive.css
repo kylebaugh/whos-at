@@ -266,6 +266,12 @@
         display:none;
     }
 
+    .body{
+        width:80vw;
+        padding-left: 0%;
+    }
+
+
     .bodyLeft{
         display:none;
     }
