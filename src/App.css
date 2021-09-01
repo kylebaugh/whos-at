@@ -84,10 +84,16 @@ html,body{
 
 .divider{
   width:95vw;
-  height:2.5px;
-  background-color: lightgrey;
-  margin-bottom: 0;
-;}
+  height:20px;
+  background-color: none;
+  border-style: solid;
+  border-color: lightgrey;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-width: 2.5px;
+  /* margin-bottom: 25px; */
+}
 
 
 /* BODY */
@@ -101,6 +107,7 @@ html,body{
   /* background-color: lightgray; */
   justify-content: space-between;
   align-content: center;
+  
 }
 
 .bodyLeft{
@@ -111,6 +118,7 @@ html,body{
   justify-content: center;
   align-items: center;
   text-align: left;
+  padding-top: 25px;
 }
 
 .bigIcon{
