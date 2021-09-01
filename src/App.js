@@ -17,10 +17,16 @@ function App() {
   }
 
   const appRedirect = () => {
-    if(navigator.userAgent.match(/Android/i)){
-      window.open('https://play.google.com/store', '_blank').focus()
-    }else if(navigator.userAgent.match(/iPhone/i)){
-      window.open('https://www.apple.com/app-store', '_blank').focus()
+    // if(navigator.userAgent.match(/Android/i)){
+    //   window.open('https://play.google.com/store', '_blank').focus()
+    // }else if(navigator.userAgent.match(/iPhone/i)){
+    //   window.open('https://www.apple.com/app-store', '_blank').focus()
+    if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
+      window.location.href = 'http://play.google.com/store/apps/details?id=com.truecaller&hl=en';
+  }
+  if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){
+      window.location.href = 'http://itunes.apple.com/lb/app/truecaller-caller-id-number/id448142450?mt=8';
+  
     }else{
       alert('Open site on your mobile device to redirect to your app store')
     }
@@ -50,14 +56,14 @@ function App() {
 
         <div className='headerRight'>
           
-        <Link to='/' style={{textDecoration:'none'}}>
+        {/* <Link to='/' style={{textDecoration:'none'}}> */}
           <div 
             className='headerMenuItem'
             onClick={() => appRedirect()}
             >
             Get the App
           </div>
-        </Link>
+        {/* </Link> */}
           
           {/* <Link to='/contact' style={{textDecoration:'none'}}>
           <div className='headerMenuItem'>
@@ -89,11 +95,14 @@ function App() {
 
       {showMenu && <div className='headerRightMobile'>
           
-        <Link to='/' style={{textDecoration:'none'}}>
-          <div className='headerMenuItem'>
+        {/* <Link to='/' style={{textDecoration:'none'}}> */}
+          <div 
+            className='headerMenuItem'
+            onClick={() => appRedirect()}
+            >
             Get the App
           </div>
-        </Link>
+        {/* </Link> */}
 
         {/* <Link to='/contact' style={{textDecoration:'none'}}>
           <div className='headerMenuItem'>
