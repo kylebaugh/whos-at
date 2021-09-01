@@ -11,8 +11,6 @@ import {useState} from 'react'
 function App() {
 
   const [showMenu, setShowMenu] = useState(false)
-  // const [isAndroid, setIsAndroid] = useState(false)
-  // const [isIOS, setIsIOS] = useState(false)
 
   const mobileMenu = () => {
     setShowMenu(!showMenu)
@@ -89,7 +87,7 @@ function App() {
 
       </div>
 
-      {!showMenu && <div className='headerRightMobile'>
+      {showMenu && <div className='headerRightMobile'>
           
         <Link to='/' style={{textDecoration:'none'}}>
           <div className='headerMenuItem'>
