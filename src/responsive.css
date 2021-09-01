@@ -1,7 +1,16 @@
 @media (max-width: 1500px){
 
+    .header{
+        margin-top: 25px;
+    }
+
     .headerRight{
         width:55%;
+    }
+
+    .divider{
+        margin-bottom: 0px;
+        /* height:20px; */
     }
 
     .problem{
@@ -137,7 +146,7 @@
 @media (max-width: 768px){
 
     .header{
-        margin-top: 2vw;
+        margin-top: 5vw;
         width:85vw;
     }
 
@@ -205,6 +214,64 @@
     .copyright{
         font-size: 12px;
     }
+
+    /* test */
+    .divider{
+        margin-top: 25px;
+    }
+
+    .body{
+        width:80vw;
+        height:fit-content;
+        padding-left: 0%;
+    }
+
+
+    .bodyLeft{
+        display:none;
+    }
+    .bodyRight{
+        display:none;
+    }
+
+    .bodyMobile{
+        display:flex;
+        height:fit-content;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3.5vh;
+        margin-bottom: 2.5vh;
+    }
+
+    .bodyLeftMobile{
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .googleIcon{
+        width:175px;
+        height:60px
+    }
+
+    .appleIcon{
+        width:175px;
+        height:210px
+    }
+
+    .bodyRightMobile{
+        margin-top: -3vh;
+        padding-left: 10vw;
+        width:115%;
+        height:fit-content
+    }
+
+    .bodyRightHeader{
+        justify-self: center;
+    }
+
+    /* .footer{
+        margin-top: 200px;
+    } */
 }
 
 @media (max-width: 576px){
@@ -268,7 +335,8 @@
 
     .body{
         width:80vw;
-        padding-left: 0%;
+        height: fit-content;
+        justify-content: center;
     }
 
 
@@ -314,7 +382,7 @@
 
     .footer{
         height:fit-content;
-        margin-top: 475px;
+        margin-top: 0px;
     }
 
     .footerLeft{
