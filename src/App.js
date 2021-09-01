@@ -22,11 +22,9 @@ function App() {
     // }else if(navigator.userAgent.match(/iPhone/i)){
     //   window.open('https://www.apple.com/app-store', '_blank').focus()
     if(navigator.userAgent.toLowerCase().indexOf("android") > -1){
-      window.location.href = 'http://play.google.com/store/apps/details?id=com.truecaller&hl=en';
-  }
-  if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){
-      window.location.href = 'http://itunes.apple.com/lb/app/truecaller-caller-id-number/id448142450?mt=8';
-  
+      window.location.href = 'https://play.google.com/store';
+    }else if(navigator.userAgent.toLowerCase().indexOf("iphone") > -1){
+      window.location.href = 'https://www.apple.com/app-store/';
     }else{
       alert('Open site on your mobile device to redirect to your app store')
     }
