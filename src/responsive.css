@@ -10,7 +10,6 @@
 
     .divider{
         margin-bottom: 0px;
-        /* height:20px; */
     }
 
     .problem{
@@ -374,6 +373,7 @@
     .bodyRightMobile{
         margin-top: -3vh;
         padding-left: 10vw;
+        width:80%;
     }
 
     .bodyRightHeader{
