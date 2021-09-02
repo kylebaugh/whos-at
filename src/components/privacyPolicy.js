@@ -18,7 +18,7 @@ const PrivacyPolicy = () => {
             <p>
                 In order to better provide you with our numerous services, we collect two types of information about our users: Personally Identifiable Information and Non-Personally Identifiable Information. Our primary goal in collecting information from you is to provide you with a smooth, efficient, and customized experience while using our site.
                 <br></br><br></br>
-                The Service is not directed to individuals under the age of 13. In the event that Who’s At discovers that a child under the age of 13 has provided personally identifiable information to us, we will make efforts to delete the child’s information if required by the Children’s Online Privacy Protection Act. Please see the Federal Trade Commission’s website for (www.ftc.gov) for more information.
+                The Service is not directed to individuals under the age of 13. In the event that Who’s At discovers that a child under the age of 13 has provided personally identifiable information to us, we will make efforts to delete the child’s information if required by the Children’s Online Privacy Protection Act. Please see the Federal Trade Commission’s website for (<a className='privacyFTCLink' href="https://www.ftc.gov/">www.ftc.gov</a>) for more information.
                 <br></br><br></br>
                 Notwithstanding the foregoing, pursuant to 47 U.S.C. Section 230 (d), as amended, we hereby notify you that parental control protections are commercially available to assist you in limiting access to material that is harmful to minors. More information on the availability of such software can be found through publicly available sources. You may wish to contact your internet service provider for more information.
                 <br></br><br></br>
@@ -49,13 +49,10 @@ const PrivacyPolicy = () => {
             
             <h3>4. Updating and Correcting Information</h3>
             <p>
-                We believe you should have the ability to access and edit the Personally Identifiable Information that you have provided to us. You may change any of your Personally Identifiable Information in your account online at any time by linking to your account in accordance with instructions posted elsewhere on this site. You may also access and correct your personal information and privacy preferences by writing us at:
-                <br></br><br></br>
-                Who’s At, LLC
+                We believe you should have the ability to access and edit the Personally Identifiable Information that you have provided to us. You may change any of your Personally Identifiable Information in your account online at any time by linking to your account in accordance with instructions posted elsewhere on this site. You may also access and correct your personal information and privacy preferences by writing us at:                <br></br><br></br>
+                <text style={{fontWeight:'bold'}}>Who’s At, LLC</text>
                 <br></br>
-                5017 El Campo
-                <br></br>
-                Fort Worth, Texas 76107
+                privacy@whosatapp.com
                 <br></br><br></br>
                 Please include your name, address, and/or E-mail address when you contact us.
                 <br></br><br></br>
@@ -93,7 +90,7 @@ const PrivacyPolicy = () => {
                 <br></br><br></br>
                 The information generated about your use of the site including your IP address is transmitted to Google. The information is then used to evaluate visitor interactions with this site and to compile reports on website traffic activity for Who’s At. Neither Who’s At nor Google will ever link or seek to link Personally Identifiable Information provided by you to the site to the data collected by Google Analytics.
                 <br></br><br></br>
-                If you would like to opt out of Google Analytics, Google has developed a tool that works with major internet browsers to permit you to opt-out. For more information and to install their opt-out tool, please click here: https://tools.google.com/dlpage/gaoptout.
+                If you would like to opt out of Google Analytics, Google has developed a tool that works with major internet browsers to permit you to opt-out. For more information and to install their opt-out tool, please click here: <a className='privacyGoogleLink' href="https://tools.google.com/dlpage/gaoptout">https://tools.google.com/dlpage/gaoptout</a>.
             </p>
             
             <h3>9. Privacy Policies of Third Party Sites</h3>
@@ -105,17 +102,15 @@ const PrivacyPolicy = () => {
             <p>
                 You must be at least 18 years old to have our permission to use this site. Our policy is that we do not knowingly collect, use, or disclose Personally Identifiable Information about visitors that are under 18 years of age.
                 <br></br><br></br>
-                At www.whosatapp.com, we DO NOT respond to Do Not Track signals.
+                At <a href='http://www.whoatapp.com'>www.whosatapp.com</a>, we DO NOT respond to Do Not Track signals.
                 <br></br><br></br>
-                You should also be aware that when Personally Identifiable Information is voluntarily disclosed (i.e. your name, E-mail address, etc.) in the discussion forums or other public areas on this site, that information, along with any information disclosed in your communication, can be collected and used by third parties and may result in unsolicited messages from third parties. Such activities are beyond our control and this Policy does not apply to such information. Any submissions to chat rooms or other public areas on this site are accepted with the understanding that they are accessible to all third parties. If you do not want your comments to be viewed by third parties, you are advised not to make any submissions. Ultimately, you are solely responsible for maintaining the secrecy of your password and/or account information. Please be careful and responsible whenever you’re online.
+                You should also be aware that when Personally Identifiable Information is voluntarily disclosed (i.e. your name, E-mail address, etc.) in public areas on this site, that information, along with any information disclosed in your communication, can be collected and used by third parties and may result in unsolicited messages from third parties. Such activities are beyond our control and this Policy does not apply to such information. Any submissions to chat rooms or other public areas on this site are accepted with the understanding that they are accessible to all third parties. If you do not want your comments to be viewed by third parties, you are advised not to make any submissions. Ultimately, you are solely responsible for maintaining the secrecy of your password and/or account information. Please be careful and responsible whenever you’re online.
                 <br></br><br></br>
-                If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us via E-mail at info@whosatapp.com. You may also request a copy of our privacy practices in writing please send a letter to:
+                If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us via E-mail at <text className="privacyEmail">info@whosatapp.com</text>. You may also request a copy of our privacy practices in writing please send a letter to:
                 <br></br><br></br>
-                Who’s At, LLC
+                <text style={{fontWeight:'bold'}}>Who’s At, LLC</text>
                 <br></br>
-                5017 El Campo Ave.
-                <br></br>
-                Ft. Worth, Texas 76107 
+                privacy@whosatapp.com
             </p>
             
         </div>

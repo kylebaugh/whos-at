@@ -304,6 +304,12 @@ html,body{
   text-align: center;
 }
 
+.TandCAddress{
+  font-weight: bold;
+}
+
+/* PRIVACY POLICY */
+
 .privacyPolicy{
   width:65%;
   display:flex;
@@ -313,4 +319,19 @@ html,body{
 
 .privacyHeader{
   text-align: center;
+}
+
+.privacyFTCLink{
+  text-decoration: underline;
+  color:rgb(128, 205, 50);
+}
+
+.privacyGoogleLink{
+  text-decoration: underline;
+  color:rgb(128, 205, 50);
+}
+
+.privacyEmail{
+  text-decoration: underline;
+  color:rgb(128, 205, 50);
 }
