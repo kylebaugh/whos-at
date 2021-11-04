@@ -31,7 +31,7 @@ const Home = (props) => {
             and the traditional call the store to ask. Who’s At is the answer.
           </p>
           <div className='appIcons'>
-            <img 
+            {/* <img 
               className='googleIcon' 
               src={`${GooglePlay}`} 
               alt='googlePlay.png'
@@ -42,7 +42,9 @@ const Home = (props) => {
               src={`${AppStore}`} 
               alt='appStore.png'
               onClick={() => openAppStore('https://www.apple.com/app-store/')}
-              />
+            /> */}
+            <a className="socialLinks" href="https://www.facebook.com/WhosAtApp/">Facebook</a>
+            <a className="socialLinks" href="https://www.instagram.com/whosatapp/">Instagram</a>
           </div>
         </div>
 
@@ -98,7 +100,7 @@ const Home = (props) => {
           </p>
           
           <div className='appIcons'>
-            <img 
+            {/* <img 
               className='googleIcon' 
               src={`${GooglePlay}`} 
               alt='googlePlay.png'
@@ -109,7 +111,9 @@ const Home = (props) => {
               src={`${AppStore}`} 
               alt='appStore.png'
               onClick={() => openAppStore('https://www.apple.com/app-store/')}
-              />
+            /> */}
+            <a className="socialLinks" href="https://www.facebook.com/WhosAtApp/">Facebook</a>
+            <a className="socialLinks" href="https://www.instagram.com/whosatapp/">Instagram</a>
           </div>
           
         </div>
